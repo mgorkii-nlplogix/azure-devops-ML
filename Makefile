@@ -9,4 +9,8 @@ test:
 lint:
 	pylint --disable=R,C hello.py
 
+venv:
+	python3 -m venv .venv &&\
+		source ./.venv/bin/activate 
+
 all: install lint test
