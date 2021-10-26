@@ -1,4 +1,4 @@
 # azure-devops-ML
 
+[![Python application test with Github Actions](https://github.com/mgorkii-nlplogix/azure-devops-ML/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/mgorkii-nlplogix/azure-devops-ML/actions/workflows/pythonapp.yml)
 
-![image](https://user-images.githubusercontent.com/82521640/138954866-d1145d01-fe8c-492a-a38d-60690ed3cfc5.png)
