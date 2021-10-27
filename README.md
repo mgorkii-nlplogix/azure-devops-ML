@@ -1,16 +1,15 @@
 [![Python application test with Github Actions](https://github.com/mgorkii-nlplogix/azure-devops-ML/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/mgorkii-nlplogix/azure-devops-ML/actions/workflows/pythonapp.yml)
 
-Overview
-<TODO: complete this with an overview of your project>
+# Overview
+This project uses Git Hub Actions to test if the script is healthy and build a CI piplene. It also uses Azure piplines to build CD pipeline. 
 
-Project Plan
-<TODO: Project Plan
 
-A link to a Trello board for the project
+## Project Plan
+[Trello board](https://trello.com/b/EsRMtX99/devops-pipeline) 
+
 A link to a spreadsheet that includes the original and final project plan>
-Instructions
-<TODO:
-
+## Instructions
+ 
 Architectural Diagram (Shows how key parts of the system work)>
 <TODO: Instructions for running the Python project. How could a user with no context run this project without asking you for any help. Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
