@@ -6,11 +6,14 @@ This project uses Git Hub Actions to test if the script is healthy and build a C
 
 ## Project Plan
 [Trello board](https://trello.com/b/EsRMtX99/devops-pipeline) 
+
+
 [Project Managment Spreadsheet](https://github.com/mgorkii-nlplogix/azure-devops-ML/blob/main/project-management.xlsx)
 
 ## Instructions
  
 ### Architectural Diagram: 
+![Projet Diagram](https://user-images.githubusercontent.com/82521640/139153485-6cb3ce0b-a007-49a4-9016-90a48b0d7269.png)
 
 
 <TODO: Instructions for running the Python project. How could a user with no context run this project without asking you for any help. Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
