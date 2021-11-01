@@ -3,7 +3,6 @@
 # Overview
 This project uses Git Hub Actions to test if the script is healthy and build a CI piplene. It also uses Azure piplines to build CD pipeline. 
 
-
 ## Project Plan
 [Trello board](https://trello.com/b/EsRMtX99/devops-pipeline) 
 
@@ -15,6 +14,58 @@ This project uses Git Hub Actions to test if the script is healthy and build a C
 ### Architectural Diagram: 
 ![Projet Diagram](https://user-images.githubusercontent.com/82521640/139153485-6cb3ce0b-a007-49a4-9016-90a48b0d7269.png)
 
+### Add ssh key to GitHub 
+
+Open your Azure CLI and create an SSH key using the following command: 
+```
+ssh-keygen -t rsa
+```
+You will be asked to provide the key path - you can skip it. Remember the file name where the key is saved to 
+Now open the key file and copy it's content: 
+```
+cat ~/.ssh/id_<file name>.pub
+```
+Open you GitHub page and go to settings-SSH and GPG keys - New SSH Key. Name the new key, past the .pub file content and save it. 
+Now you should be able to clone the project. 
+
+### Clone the project 
+
+cd to the folder you want to clone the project to and run the following command: 
+```
+git clone git@github.com:mgorkii-nlplogix/azure-devops-ML.git
+```
+![image](https://user-images.githubusercontent.com/82521640/139696520-e44c0223-f2df-404c-a628-c44dd0665608.png)
+
+
+### Run project in Azure Webapp Service
+To create the app service with minimum storage run the following command: 
+```
+az webapp up --sku F1 --name flask-ml-app
+```
+It will create and run an app named "flask-ml-app"
+You can check if the app is running ny opening the following url in the browser: 
+
+![image](https://user-images.githubusercontent.com/82521640/139700814-b8a5a6a0-548c-48eb-ad90-d1d251679f43.png)
+
+Open the file make_predict_azure_app.sh and replace the POST url with url of your service.
+
+### Create virtual env
+Run the following command : 
+```
+make setup
+```
+It will create a vitrual environment in /.udacity-devops folder
+To activate the venv run the follwoing command: 
+
+```
+source ~/.udacity-devops/bin/activate
+```
+Run the following command to run the full setup and test: 
+
+```
+make all
+```
+![image](https://user-images.githubusercontent.com/82521640/139702011-b1f881d2-88a8-42b5-a0bc-20d3c7170e24.png)
 
 <TODO: Instructions for running the Python project. How could a user with no context run this project without asking you for any help. Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
