@@ -67,28 +67,43 @@ make all
 ```
 ![image](https://user-images.githubusercontent.com/82521640/139702011-b1f881d2-88a8-42b5-a0bc-20d3c7170e24.png)
 
-<TODO: Instructions for running the Python project. How could a user with no context run this project without asking you for any help. Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+### Deploy project in Azure Pipelines
+open dev.azure.com and click "New project"
+![image](https://user-images.githubusercontent.com/82521640/139725127-33b632a7-3607-495b-a04b-f389526cbc8b.png)
+Create a new project and go to "settings" - "service connections" - "new service connections" - "azure resourse manager"
+![image](https://user-images.githubusercontent.com/82521640/139725729-94cd8cdd-c838-4131-b4f6-752dd8b9956d.png)
+Choose "Service principal" - "Subscription". Choose your Subscription, Resource group, Service connection name. Grant access permissions to all pipelines. 
 
-Project running on Azure App Service
+Go back to your account and choose "Pipelines" - "Pipelines" - "Create Pipeline"
+![image](https://user-images.githubusercontent.com/82521640/139727441-df1dc4b1-af7f-4121-ad7d-3c21e0302e6b.png)
 
-Project cloned into Azure Cloud Shell
+Create a GitHub Integration 
+![image](https://user-images.githubusercontent.com/82521640/139727532-a09ab4f0-3859-40ca-b9dc-0f0b6700047c.png)
 
-Passing tests that are displayed after running the make all command from the Makefile
+Configure Python to Linux Web App on Azure
+![image](https://user-images.githubusercontent.com/82521640/139727566-17808782-424d-4b51-8e1e-f9dc76e147a1.png)
 
-Output of a test run
+Once your pipline is set up you can check all the recent runs: 
 
-Successful deploy of the project in Azure Pipelines. Note the official documentation should be referred to and double checked as you setup CI/CD.
+![image](https://user-images.githubusercontent.com/82521640/139727776-987b85dc-5ac2-4458-968f-352f713a64ef.png)
+![image](https://user-images.githubusercontent.com/82521640/139727818-7ebcf54a-00e7-46a6-92b0-8f83d6d6f749.png)
+![image](https://user-images.githubusercontent.com/82521640/139727847-8b0082ea-2039-4cff-ba77-6da713464efb.png)
 
-Running Azure App Service from Azure Pipelines automatic deployment
 
-Successful prediction from deployed flask app in Azure Cloud Shell. Use this file as a template for the deployed prediction. The output should look similar to this:
+### Check the predict
 
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-Output of streamed log files from deployed application
-Enhancements
-<TODO: A short description of how to improve the project in the future>
+To check the prediction run the script in power shell: 
+```
+./make_predict_azure_app.sh
+```
+![image](https://user-images.githubusercontent.com/82521640/139728348-f3c33f19-c667-4474-baa2-a2cb76755654.png)
+
+### Enhancements
+Might apply more security policies 
+Deploy a Kubernetes version in Azure
+Set up log trail 
+Set up Monitoring alerts 
+Set up Budgeting in Azure 
 
 Demo
-<TODO: Add link Screencast on YouTube>
+
