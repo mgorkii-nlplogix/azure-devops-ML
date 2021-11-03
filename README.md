@@ -38,6 +38,12 @@ git clone git@github.com:mgorkii-nlplogix/azure-devops-ML.git
 ```
 ![image](https://user-images.githubusercontent.com/82521640/139696520-e44c0223-f2df-404c-a628-c44dd0665608.png)
 
+### GitHub Actions
+
+Once you push any changes to GitHub you can check the test results. Go to the repo page on GitHub and click actions 
+
+![image](https://user-images.githubusercontent.com/82521640/140065390-1e241378-5b96-4adc-8990-501ff3627e80.png)
+
 
 ### Run project in Azure Webapp Service
 To create the app service with minimum storage run the following command: 
@@ -69,6 +75,24 @@ make all
 ```
 ![image](https://user-images.githubusercontent.com/82521640/139702011-b1f881d2-88a8-42b5-a0bc-20d3c7170e24.png)
 
+
+### Test an application using Locust (swarm the target website from localhost)
+
+Source your venv: 
+
+```
+source ~/.udacity-devops/bin/activate
+```
+Install locust: 
+```pip install locust
+```
+run 
+`` locust
+```
+Open http://localhost:8089
+
+
+
 ### Deploy project in Azure Pipelines
 open dev.azure.com and click "New project"
 ![image](https://user-images.githubusercontent.com/82521640/139725127-33b632a7-3607-495b-a04b-f389526cbc8b.png)
@@ -90,6 +114,9 @@ Once your pipline is set up you can check all the recent runs:
 ![image](https://user-images.githubusercontent.com/82521640/139727776-987b85dc-5ac2-4458-968f-352f713a64ef.png)
 ![image](https://user-images.githubusercontent.com/82521640/139727818-7ebcf54a-00e7-46a6-92b0-8f83d6d6f749.png)
 ![image](https://user-images.githubusercontent.com/82521640/139727847-8b0082ea-2039-4cff-ba77-6da713464efb.png)
+
+Check the if the project succesfully deployed: 
+![image](https://user-images.githubusercontent.com/82521640/140066017-b3c7058a-25c8-4412-b49e-02121440018e.png)
 
 
 ### Check the predict
