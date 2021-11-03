@@ -1,5 +1,7 @@
 [![Python application test with Github Actions](https://github.com/mgorkii-nlplogix/azure-devops-ML/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/mgorkii-nlplogix/azure-devops-ML/actions/workflows/pythonapp.yml)
 
+[![Build Status](https://dev.azure.com/mgorki/flask-ml-app-deploy/_apis/build/status/mgorkii-nlplogix.azure-devops-ML?branchName=main)](https://dev.azure.com/mgorki/flask-ml-app-deploy/_build/latest?definitionId=3&branchName=main)
+
 # Overview
 This project uses Git Hub Actions to test if the script is healthy and build a CI piplene. It also uses Azure piplines to build CD pipeline. 
 
@@ -107,3 +109,4 @@ Set up Budgeting in Azure
 
 Demo
 
+[demo link](https://youtu.be/z9cosUpexhk)
