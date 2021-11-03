@@ -89,8 +89,11 @@ Install locust:
 run 
 `` locust
 ```
-Open http://localhost:8089
+Open localhost:8089. Make sure to open that exact url.
 
+![image](https://user-images.githubusercontent.com/82521640/140084201-8512b159-3ca3-4b79-93af-71189ba51ce3.png)
+
+![image](https://user-images.githubusercontent.com/82521640/140084664-80584a61-39d6-4f8e-a6e6-e6375eef1fd5.png)
 
 
 ### Deploy project in Azure Pipelines
