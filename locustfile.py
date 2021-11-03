@@ -1,8 +1,9 @@
-import time
-from locust import HttpUser, task, between
+import random, json
+from locust import HttpUser, task
 
 class QuickstartUser(HttpUser):
-    wait_time = between(1, 2)
+    min_wait = 5000
+    max_wait = 9000    
 
     @task
     def home_page(self):
