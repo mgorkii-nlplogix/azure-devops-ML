@@ -87,7 +87,8 @@ Install locust:
 ```pip install locust
 ```
 run 
-`` locust
+```
+locust
 ```
 Open localhost:8089. Make sure to open that exact url.
 
